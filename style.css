@@ -1,0 +1,62 @@
+/* Roboto Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Genel Stiller*/
+body {
+  font-family: "Roboto", sans-serif;
+  color: #444;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/*Body - Responsive*/
+@media (min-width: 768px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+}
+
+/*Header*/
+.logo {
+  width: 150px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links li a:link,
+.nav-links li a:visited,
+.nav-links li a:active {
+  text-decoration: none;
+  color: #b8a994;
+}
+.nav-links li a:hover {
+  color: #8a796b;
+}
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+/*Header - Responsive*/
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
